@@ -64,7 +64,7 @@ Refesh schedules for the target environment can be set using the following confi
 # Example DeployConfig.json 
 
 The general structure of the JSON file is found below. 
-
+```
 {
    "refreshGroups": [{ "dataflows" : [],
 			     "datasets: : [] }],
@@ -93,7 +93,7 @@ The general structure of the JSON file is found below.
    "dataflows": []
 
 }
-
+```
 
 
 
