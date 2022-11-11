@@ -1,5 +1,5 @@
-# PowerBi-Workspace-Alm-PS-Scripts
-Power Shell Scripts for supporting Power Bi Workspace Application Lifecycle Management (ALM)
+# PowerBi-Workspace-Intra-Tenant-Migration-Scripts
+Power Shell Scripts for supporting Intra-Tenant Migration of Power Bi Workspaces
 
 # Background
 
