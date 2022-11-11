@@ -3,15 +3,15 @@ Power Shell Scripts for supporting Power Bi Workspace Application Lifecycle Mana
 
 # Background
 
-I recently wrapped up a PowerBi  project in which PowerBi development was done on my company's tenant and subsequently deployed to a customers tenant.  I found that it was not quite straigtforward, so I had to develop tools to work around the pain points and achieve consistant error-free outcomes when deploying.  
+I recently wrapped up a PowerBi  project in which PowerBi development was done on my company's tenant and subsequently deployed to a customers tenant.  I found that deployment of PowerBi workspaces from one tenant to another was not quite straigtforward, so I developed tools to work around the pain points and achieve consistant error-free outcomes.  
 
-The primary challenge is I did not have access to the production environment and the updates needed to be applied by someone with very little experience with Power Bi.  I had to make the deployment as seamless and error free as possible.
+Another significant challenge is I did not have access to the production environment and the updates needed to be applied by someone with very little experience with Power Bi.  I had to make the deployment as seamless and error free as possible.
 
-The scripts contained in this repository are the end result of my efforts.
+The scripts contained in this repository are the fruit of my efforts.
 
 This repository was created to share the work I did for the benefit of the broader Power Bi Maker/Developer community.  Please forgive me as these scripts were originally created to solve a one-off problem.   Code quality and standards were not a priority.  With that said, the scripts do work and could serve as a starting point for automating similar scenerios.
 
-The scripts are provided as is.  As time permits, I may provide more guidance and insight.
+The scripts are provided as is.  As time permits, I may provide more guidance and insight.  Otherwise, take them and do as you wish.  If you make improvements, please feel free to share.  If you would like to make contributions, just reach out to me.
 
 # How the scripts work
 
