@@ -74,10 +74,10 @@ Refesh schedules for the target environment can be set using the following confi
 # Example DeployConfig.json 
 
 The general structure of the JSON file is found below. 
-```
+```json
 {
    "refreshGroups": [{ "dataflows" : [],
-			     "datasets: : [] }],
+			     "datasets" : [] }],
    "paginatedReports": [],	
    "pbitFiles":  [
                       {
@@ -91,7 +91,7 @@ The general structure of the JSON file is found below.
                                                    {
                                                        "parameter":  "<Workspace Id Parameter>",
                                                        "defaultValue":  "<Dev Workspace ID>",
-                                                       "useTargetWorkspaceId":  <true>
+                                                       "useTargetWorkspaceId":  true
                                                    },
                                                    {
                                                        "parameter":  "<Dataflow ID Parameter>",
@@ -99,7 +99,7 @@ The general structure of the JSON file is found below.
                                                        "useIdOfDataflow":  "<DataFlowName>"
                                                    },
                                                ]
-                  ],
+                  }],
    "dataflows": []
 
 }
