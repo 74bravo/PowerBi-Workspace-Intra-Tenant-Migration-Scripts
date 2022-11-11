@@ -30,21 +30,21 @@ Exporting a workspace.
 >
 >  2)   In that directory, save the workspace PBIX files as PBIT files in a subfolder called PBIT.
 >
->  3)   Make the following modification to the ExportWorkspace.ps1 file:  Change the $SourceWorkspaceName = "[Enter Target Workspace Name Here]" line to specify the name of the source workspace to be exported.  This is the development environment.
+>  3)   Make the following modification to the `ExportWorkspace.ps1` file:  Change the `$SourceWorkspaceName = "[Enter Target Workspace Name Here]"` line to specify the name of the source workspace to be exported.  This is the development environment.
 >
->  4)   Run the ExportWorkspace.ps1 script.  Provide credentials when asked.  Let it do its thing.
+>  4)   Run the `ExportWorkspace.ps1` script.  Provide credentials when asked.  Let it do its thing.
 >
 >  5)   In addition to exporting components and decomposing the PBIT files, the export will create a series of configuration JSON files which can be modifed to specify certain changes or rules to apply when recomposing and importing the workspace.
 
 Importing a workspace.
 
->  1)   Make the following modification to the ImportWorkspace.ps1 file:  Change the $TargetWorkspaceName = "[Enter Target Workspace Name Here]" line to specify the name of the target workspace to import/update.  This is the typically a dev workspace in the production tenant.
+>  1)   Make the following modification to the `ImportWorkspace.ps1` file:  Change the `$TargetWorkspaceName = "[Enter Target Workspace Name Here]"` line to specify the name of the target workspace to import/update.  This is the typically a dev workspace in the production tenant.
 >
->  2)   Run the ExportWorkspace.ps1 script.  Provide credentials when asked.  Let it do its thing.  Follow the instructions to reconsitute the PBIX files very carefully.  This part of the script execution is interactive and will not continue without user input.
+>  2)   Run the `ExportWorkspace.ps1` script.  Provide credentials when asked.  Let it do its thing.  Follow the instructions to reconsitute the PBIX files very carefully.  This part of the script execution is interactive and will not continue without user input.
 
 # Configuring the import
 
-When the export is run, it will create a series of json files called DeployConfig.json or DeployConfig.\<config\>.json.
+When the export is run, it will create a series of json files called `DeployConfig.json` or `DeployConfig.\<config\>.json`.
 
 These config files are created or updated during the export and serve as a manifest for importing into the target workspace.  The config files can also be used to specific certain rules to be follow as the target workspace is updated.   Please note the following elements:
 
