@@ -42,11 +42,16 @@ These config files are created or updated during the export and serve as a manif
 
 
 The following custom setting can be used for Dataset / Power Query parameters meant to capture a target workspace ID.
+
 pbitfiles : [ { "mQueryParamters" : [{"useTargetWorkspaceId":  <true>}] } ]
 
 The following custom setting can be used for Dataset / Power Query parameters meant to capture a dataflow ID.
-pbitfiles : [ { "mQueryParamters" : [{"useIdOfDataflow":  "<DataFlowName>"}] } ]
 
+pbitfiles : [ { "mQueryParamters" : [{"useIdOfDataflow":  "<DataFlowName>"}] } ]
+	
+Refesh schedules for the target environment can be set using the following config setions:
+"refreshGroups": [{ "dataflows" : [],
+		    "datasets: : [] }],	
 
 # Example DeployConfig.json 
 
