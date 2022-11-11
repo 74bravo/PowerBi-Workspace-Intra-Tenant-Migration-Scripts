@@ -107,6 +107,10 @@ ipch/
 *.VC.db
 *.VC.VC.opendb
 
+
+*.json
+*.rdl
+
 # Visual Studio profiler
 *.psess
 *.vsp
@@ -348,3 +352,8 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+pbit/pbitConfig.dev.json
+pbit/pbitConfig.sqa.json
+deployConfig.sqa.json
+deployConfig.json
+deployConfig.dev.json
