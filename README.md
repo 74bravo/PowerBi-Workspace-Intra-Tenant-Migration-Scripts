@@ -44,26 +44,31 @@ Importing a workspace.
 
 # Configuring the import
 
-When the export is run, it will create a series of json files called DeployConfig.json or DeployConfig.<config>.json.
+When the export is run, it will create a series of json files called DeployConfig.json or DeployConfig.\<config\>.json.
 
 These config files are created or updated during the export and serve as a manifest for importing into the target workspace.  The config files can also be used to specific certain rules to be follow as the target workspace is updated.   Please note the following elements:
 
 
 The following custom setting can be used for Dataset / Power Query parameters meant to capture a target workspace ID.
-```
-pbitfiles : [ { "mQueryParamters" : [{"useTargetWorkspaceId":  <true>}] } ]
+```json
+{"pbitfiles" : [ { "mQueryParamters" : [{"useTargetWorkspaceId":  true}] } ]}
 ```
 
 The following custom setting can be used for Dataset / Power Query parameters meant to capture a dataflow ID.
-```
-pbitfiles : [ { "mQueryParamters" : [{"useIdOfDataflow":  "<DataFlowName>"}] } ]
+```json
+{"pbitfiles" : [ { "mQueryParamters" : [{"useIdOfDataflow":  "<DataFlowName>"}] } ]
 ```
 	
 Refesh schedules for the target environment can be set using the following config setions:
-```
-pbitfiles : [ { "refreshGroups": [{ "dataflows" : [],
-				    "datasets: : [] }]
-	       }]
+```json
+{"pbitfiles" : [ 
+		{ "refreshGroups": [
+					{ "dataflows" : [],
+				          "datasets" : [] }
+				  ]
+	        }
+	      ]
+}
 ```
 
 # Example DeployConfig.json 
