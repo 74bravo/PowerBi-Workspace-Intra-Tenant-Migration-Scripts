@@ -7,7 +7,7 @@ I recently wrapped up a PowerBi consulting arrangement in which PowerBi developm
 
 The primary challenge is I did not have access to the production environment and the updates needed to be applied by someone with very little experience with Power Bi.  I had to make the deployment as seamless and error free as possible.
 
-The scripts contained in this repository is the end result of my efforts.
+The scripts contained in this repository are the end result of my efforts.
 
 This repository was created to share the work I did for the benefit of the broader Power Bi Maker/Developer community.  Please forgive me as these scripts were originally created to solve a one-off problem.   Code quality and standards were not a priority.  With that said, the scripts do work and could serve as a starting point for automating similar scenerios.
 
