@@ -25,15 +25,13 @@ In practice, I recommend exporting workspaces to a GIT repository that is access
 # Getting Started
 
 Exporting a workspace.
-
-1)  To get started, copy all the .ps1 files to the root of a local file directory dedicated to one PowerBi workspace project.
-2)  In that directory, save the workspace PBIX files as PBIT files in a subfolder called PBIT.
-3)  Make the following modification to the ExportWorkspace.ps1 file:  Change the $SourceWorkspaceName = "[Enter Target Workspace Name Here]" line to specify the name of the source workspace to be exported.  This is the development environment.
-
-4)  Run the ExportWorkspace.ps1 script.  Provide credentials when asked.  Let it do its thing.
-
-5)  In addition to exporting components and decomposing the PBIT files, the export will create a series of configuration JSON files which can be modifed to specify certain changes or rules to apply when recomposing and importing the workspace.
-
+/**
+* 1)  To get started, copy all the .ps1 files to the root of a local file directory dedicated to one PowerBi workspace project.
+* 2)  In that directory, save the workspace PBIX files as PBIT files in a subfolder called PBIT.
+* 3)  Make the following modification to the ExportWorkspace.ps1 file:  Change the $SourceWorkspaceName = "[Enter Target Workspace Name Here]" line to specify the name of the source workspace to be exported.  This is the development environment.
+* 4)  Run the ExportWorkspace.ps1 script.  Provide credentials when asked.  Let it do its thing.
+* 5)  In addition to exporting components and decomposing the PBIT files, the export will create a series of configuration JSON files which can be modifed to specify certain changes or rules to apply when recomposing and importing the workspace.
+*/
 Importing a workspace.
 
 1) Make the following modification to the ImportWorkspace.ps1 file:  Change the $TargetWorkspaceName = "[Enter Target Workspace Name Here]" line to specify the name of the target workspace to import/update.  This is the typically a dev workspace in the production tenant.
