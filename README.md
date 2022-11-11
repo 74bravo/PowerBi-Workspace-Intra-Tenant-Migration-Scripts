@@ -1,6 +1,8 @@
 # PowerBi-Workspace-Alm-PS-Scripts
 Power Shell Scripts for supporting Power Bi Workspace Application Lifecycle Management (ALM)]
 
+#Background
+
 I recently wrapped up a PowerBi consulting arrangement in which PowerBi development was done on my company's tenant and then deployed to a customers tenant.  I found that it was not quite that easy, so I had to develop tools to work around the challenges.  The scripts contained in this repository is the end result of my efforts.
 
 This repository was created to share the work I did for the benefit of the broader Power Bi Maker/Developer community.  Please forgive me as these scripts were originally created to solve a one-off problem.   Code quality and standards were not a priority.  With that said, the scripts do work and could serve as a starting point for automating similar scenerios.
